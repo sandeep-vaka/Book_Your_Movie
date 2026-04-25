@@ -1,0 +1,82 @@
+.theatre-selection-container {
+  padding-top: 40px;
+}
+
+.theatre-selection-container h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.date-selector {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.date-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s;
+}
+
+.date-btn.active {
+  background: var(--accent-color);
+  color: white;
+}
+
+.date-btn .month {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.date-btn .day {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.theatres-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.theatre-row {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.theatre-info h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.theatre-info p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.show-times {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.time-btn {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.time-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}

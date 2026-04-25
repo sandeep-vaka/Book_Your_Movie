@@ -1,0 +1,51 @@
+.hero-banner {
+  height: 60vh;
+  min-height: 400px;
+  background: linear-gradient(to top, var(--bg-color) 0%, transparent 100%), 
+              url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  max-width: 600px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: var(--text-muted);
+  max-width: 500px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  padding: 0 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 20px 60px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 20px;
+}

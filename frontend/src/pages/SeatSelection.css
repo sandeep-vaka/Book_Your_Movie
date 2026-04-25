@@ -1,0 +1,132 @@
+.seat-selection-container {
+  padding-top: 40px;
+  max-width: 800px;
+}
+
+.header-info {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.screen-indicator {
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--text-muted);
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.screen-line {
+  height: 40px;
+  border-top: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  margin-bottom: 10px;
+  box-shadow: 0 -10px 20px rgba(255, 255, 255, 0.05);
+}
+
+.seat-map {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.row-label {
+  width: 30px;
+  font-weight: bold;
+  color: var(--text-muted);
+}
+
+.seats {
+  display: flex;
+  gap: 10px;
+}
+
+.seat {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px 8px 4px 4px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  color: white;
+}
+
+.seat.available {
+  background-color: var(--seat-available);
+  cursor: pointer;
+}
+.seat.available-legend {
+  background-color: var(--seat-available);
+}
+
+.seat.available:hover {
+  background-color: var(--seat-hover);
+  transform: scale(1.1);
+}
+
+.seat.booked {
+  background-color: var(--seat-booked);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.seat.booked-legend {
+  background-color: var(--seat-booked);
+}
+
+.seat.selected {
+  background-color: var(--seat-selected);
+  transform: scale(1.1);
+}
+.seat.selected-legend {
+  background-color: var(--seat-selected);
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.booking-bar {
+  position: sticky;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
+
+.booking-summary p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.booking-bar .btn-primary {
+  width: auto;
+  min-width: 200px;
+}
